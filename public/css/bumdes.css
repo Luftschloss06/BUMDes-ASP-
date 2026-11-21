@@ -1,0 +1,70 @@
+/* Token dari Figma: 01 - Login | Desa Tirta App */
+:root{
+  --forest:#1e3527; --ink:#141e17; --text:#424843; --muted:#737973;
+  --moss:#516449; --moss-dark:#55684d;
+  --mint-bg:#f1fcf0; --mint-1:#ebf7eb; --mint-2:#e6f1e5; --mint-3:#e0ebdf;
+  --sage:#cde9d5; --sage-dot:#d0e6c4; --white:#fff;
+  --radius-card:12px; --radius:8px; --radius-sm:6px;
+  --shadow-card:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);
+  --shadow-input:0 1px 2px rgba(0,0,0,.05);
+  --font-head:'Plus Jakarta Sans',system-ui,sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--mint-bg);font-family:var(--font-body);color:var(--text);font-size:14px}
+h1,h2,h3{font-family:var(--font-head);color:var(--ink);margin:0}
+a{color:var(--moss)}
+:focus-visible{outline:2px solid var(--forest);outline-offset:2px}
+
+/* Login */
+.auth-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px 16px}
+.auth-card{display:grid;grid-template-columns:5fr 7fr;width:100%;max-width:1040px;min-height:800px;background:var(--white);border-radius:var(--radius-card);box-shadow:var(--shadow-card);overflow:hidden}
+.auth-left{background:var(--forest);padding:40px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.auth-left::before{content:"";position:absolute;top:-64px;right:-64px;width:224px;height:224px;border-radius:50%;background:rgba(205,233,213,.05);filter:blur(40px)}
+.brand{display:flex;gap:12px;align-items:center}
+.brand-logo{width:44px;height:44px;border-radius:var(--radius);background:rgba(255,255,255,.1);display:grid;place-items:center}
+.brand-name{font:600 18px/26px var(--font-head);color:#fff;letter-spacing:-.45px}
+.badge-pill{background:rgba(205,233,213,.2);color:var(--sage);font:400 12px var(--font-body);padding:2px 8px;border-radius:999px;margin-left:8px}
+.brand-sub{font-size:12px;letter-spacing:.3px;text-transform:uppercase;color:rgba(218,229,218,.8)}
+.chip{display:inline-flex;gap:8px;align-items:center;background:rgba(218,229,218,.15);color:var(--sage);font-size:12px;padding:4px 12px;border-radius:999px;margin-top:24px}
+.chip i{width:6px;height:6px;border-radius:50%;background:#d3e9c7}
+.auth-left h2{color:#fff;font:600 26px/32.5px var(--font-head);letter-spacing:-.39px;margin:32px 0 10px}
+.auth-left p{color:rgba(218,229,218,.9);line-height:22.75px;margin:0}
+.note{background:rgba(218,229,218,.1);border-radius:var(--radius);padding:16px;margin-top:32px}
+.note b{font:600 14px var(--font-head);color:var(--sage)}
+.note p{font-size:12px;line-height:18px;color:rgba(218,229,218,.85);margin-top:8px}
+.auth-meta{display:flex;justify-content:space-between;font-size:12px;color:rgba(218,229,218,.7)}
+.auth-right{padding:44px;display:flex;flex-direction:column;justify-content:space-between}
+.eyebrow{display:flex;justify-content:space-between;font-size:12px}
+.eyebrow strong{font-weight:500;letter-spacing:1.2px;text-transform:uppercase;color:var(--moss)}
+.auth-right h1{font:700 30px/38px var(--font-head);letter-spacing:-.75px;margin:8px 0}
+.lead{line-height:22px;margin:0}
+label.lbl{display:block;font-weight:500;font-size:13px;color:var(--ink);margin:16px 0 8px}
+.roles{background:var(--mint-2);padding:4px;border-radius:var(--radius);display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.roles input{position:absolute;opacity:0}
+.roles label{display:flex;justify-content:center;padding:10px 4px;border-radius:var(--radius-sm);font-size:12px;font-weight:500;cursor:pointer}
+.roles input:checked+label{background:var(--forest);color:#fff;box-shadow:0 1px 1px rgba(0,0,0,.05)}
+.roles input:focus-visible+label{outline:2px solid var(--forest);outline-offset:2px}
+.route-pill{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;background:var(--mint-1);border-radius:var(--radius);padding:10px 12px 8px;margin-top:8px;font-size:12px}
+.route-pill b{font:600 14px var(--font-body);color:var(--forest);margin-left:6px}
+.route-pill small{color:rgba(66,72,67,.8)}
+.field{margin-bottom:16px}
+.field input[type=text],.field input[type=password]{width:100%;height:46px;border:1px solid #e6e8e6;border-radius:var(--radius);box-shadow:var(--shadow-input);padding:0 16px;font:14px var(--font-body)}
+.field-head{display:flex;justify-content:space-between;align-items:baseline;font-size:12px}
+.err{color:#b3261e;font-size:12px;margin-top:4px}
+.remember{display:flex;gap:10px;align-items:center;font-size:12px;margin:4px 0 16px}
+.btn-primary{width:100%;height:46px;border:0;border-radius:var(--radius);background:var(--forest);color:#fff;font:600 14px var(--font-body);cursor:pointer;box-shadow:0 4px 6px -1px rgba(0,0,0,.1)}
+.btn-primary:hover{background:#2a4a36}
+.assure{display:flex;gap:12px;align-items:center;background:var(--mint-3);border-radius:var(--radius);padding:12px;margin-top:16px;font-size:12px;color:var(--moss-dark)}
+.foot{display:flex;justify-content:space-between;align-items:center;font-size:12px;margin-top:24px}
+.tag{background:var(--mint-2);padding:2px 8px;border-radius:4px}
+@media(max-width:860px){.auth-card{grid-template-columns:1fr}.auth-left{display:none}}
+
+/* Shell aplikasi */
+.shell{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+.side{background:var(--forest);color:var(--sage);padding:24px 16px}
+.side a{display:block;color:var(--sage);text-decoration:none;padding:8px 12px;border-radius:var(--radius-sm)}
+.side a:hover,.side a.on{background:rgba(255,255,255,.1);color:#fff}
+.side h4{font:600 12px var(--font-body);letter-spacing:.8px;color:rgba(218,229,218,.6);margin:20px 12px 6px}
+.main{padding:32px}
+.panel{background:#fff;border-radius:var(--radius-card);padding:24px;box-shadow:var(--shadow-input)}
