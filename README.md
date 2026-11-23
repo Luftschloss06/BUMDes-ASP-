@@ -107,6 +107,6 @@ php artisan serve
 ## Teknologi
 
 - **Framework:** Laravel 12
-- **Database:** SQLite (development)
+- **Database:** MySQL
 - **Frontend:** Blade Template + CSS custom (token desain dari Figma)
-- **Autentikasi:** Laravel Auth bawaan dengan sistem role kustom
+- **Autentikasi:** Laravel Auth bawaan dengan sistem role kustom (sementara)
